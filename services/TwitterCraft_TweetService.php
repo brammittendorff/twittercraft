@@ -1,7 +1,7 @@
 <?php
 namespace Craft;
 
-require_once CRAFT_PLUGINS_PATH.'twittercraft/vendor/autoload.php';
+require_once CRAFT_BASE_PATH.'/vendor/autoload.php';
 
 class TwitterCraft_TweetService extends BaseApplicationComponent
 {
