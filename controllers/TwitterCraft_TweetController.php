@@ -11,7 +11,7 @@ class TwitterCraft_TweetController extends BaseController
     public function actionFetchTweets()
     {
         if (craft()->userSession->isLoggedIn()) {
-            if (craft()->twitterCraft_tweet->checkTweets()) {
+            if (craft()->twitterCraft_tweet->checkTmhOAuthConnection()) {
                 craft()->twitterCraft_tweet->getTweets();
             }
         }

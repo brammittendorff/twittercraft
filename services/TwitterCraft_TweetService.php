@@ -26,7 +26,7 @@ class TwitterCraft_TweetService extends BaseApplicationComponent
      * Check if we have the latest tweet in our database
      * @return boolean      return true if the resultJson is filled
      */
-    public function checkTweets()
+    public function checkTmhOAuthConnection()
     {
         // Parse request
         $url = $this->tmhOAuth->url('1.1/statuses/user_timeline');

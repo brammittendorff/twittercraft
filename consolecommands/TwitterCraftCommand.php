@@ -17,7 +17,7 @@ class TwitterCraftCommand extends BaseCommand
         }
 
         // download tweets into tasks
-        if (craft()->twitterCraft_tweet->checkTweets()) {
+        if (craft()->twitterCraft_tweet->checkTmhOAuthConnection()) {
             craft()->twitterCraft_tweet->getTweets();
         }
     }
