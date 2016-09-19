@@ -5,8 +5,6 @@ class TwitterCraftCommand extends BaseCommand
 {
     /**
      * Runs cronjob for twittercraft
-     *
-     * @return int
      */
     public function actionRun()
     {
