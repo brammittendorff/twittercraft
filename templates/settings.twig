@@ -1,0 +1,34 @@
+{% import "_includes/forms" as forms %}
+
+<p>
+    {{ forms.textField({
+      label: 'Consumer key'|t,
+      name: 'consumer_key',
+      value: settings.consumer_key
+    }) }}
+
+    {{ forms.textField({
+      label: 'Consumer secret'|t,
+      name: 'consumer_secret',
+      value: settings.consumer_secret
+    }) }}
+
+    {{ forms.textField({
+      label: 'User token'|t,
+      name: 'user_token',
+      value: settings.user_token
+    }) }}
+
+    {{ forms.textField({
+      label: 'User secret'|t,
+      name: 'user_secret',
+      value: settings.user_secret
+    }) }}
+
+    {{ forms.textField({
+      label: 'Twitter handle'|t,
+      name: 'twitter_handle',
+      value: settings.twitter_handle
+    }) }}
+
+</p>

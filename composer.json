@@ -1,0 +1,18 @@
+{
+    "name": "brammittendorff/twittercraft",
+    "description": "A plugin for CraftCMS to get the twitter feeds automagicly",
+    "authors": [
+        {
+            "name": "Bram Mittendorff",
+            "email": "bram@nerds.company",
+            "homepage": "http://github.com/brammittendorff",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "type": "craft-plugin",
+    "require": {
+        "composer/installers": "~1.0",
+        "themattharris/tmhOAuth": "^0.8.4"
+    }
+}
