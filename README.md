@@ -25,7 +25,7 @@ You can install this plugin with git to you just need to clone this repo into yo
 <div class="row">
   {% for tweet in craft.twittercraft.showTweets() %}
     {% set json = tweet.twitterJson %}
-    {% if json.user.screen_name == 'glasbuitenaf' %}
+    {% if json.user.screen_name == 'someuser' %}
       <div class="col-sm-4">
           <div class="block block--twitter">
               {{ json.text }}
