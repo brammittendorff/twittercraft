@@ -62,6 +62,12 @@ class TwitterCraft_TweetService extends BaseApplicationComponent
         }
     }
 
+    public function showTweets()
+    {
+        $records = TwitterCraft_TweetRecord::model()->findAll();
+        return TwitterCraft_TweetModel::populateModels($records, 'id');
+    }
+
     public function saveTweet($tweetId = '', $tweetJson = '')
     {
         if (!empty($tweetId) && !empty($tweetJson)) {
