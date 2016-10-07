@@ -22,16 +22,18 @@ You can install this plugin with git to you just need to clone this repo into yo
 # Usage
 
 ```
-{% for tweet in craft.twittercraft.showTweets() %}
-  {% set json = tweet.twitterJson %}
-  {% if json.user.screen_name == 'glasbuitenaf' %}
-    <div class="col-sm-4">
-        <div class="block block--twitter">
-            {{ json.text }}
-        </div>
-    </div>
-  {% endif %}
-{% endfor %}
+<div class="row">
+  {% for tweet in craft.twittercraft.showTweets() %}
+    {% set json = tweet.twitterJson %}
+    {% if json.user.screen_name == 'glasbuitenaf' %}
+      <div class="col-sm-4">
+          <div class="block block--twitter">
+              {{ json.text }}
+          </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
 ```
 
 # Scheduled tasks
