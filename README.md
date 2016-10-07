@@ -19,6 +19,21 @@ You can install this plugin with git to you just need to clone this repo into yo
 ```git clone https://github.com/brammittendorff/twittercraft.git```
 
 
+# Usage
+
+```
+{% for tweet in craft.twittercraft.showTweets() %}
+  {% set json = tweet.twitterJson %}
+  {% if json.user.screen_name == 'glasbuitenaf' %}
+    <div class="col-sm-4">
+        <div class="block block--twitter">
+            {{ json.text }}
+        </div>
+    </div>
+  {% endif %}
+{% endfor %}
+```
+
 # Scheduled tasks
 
 You can use this plugin as a cronjob, or as a schedule in heroku just use/run the following command:
